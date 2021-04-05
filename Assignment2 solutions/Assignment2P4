@@ -1,0 +1,28 @@
+Starting from initial value (x, y), given that V (x, y) is the winning probability of player X. Hence the winning probability of player y is 1 – V (x, y). According to Bellman’s equation, 
+
+V (x, y) = ½ V (x - 1, y) + ½ V (x, y - 1) for all x, y > 0
+
+with boundary conditions V (0, y) = 0 for all y ≥ 0 and V(x,0) = 1 for all x > 0
+
+P4 – i                
+                                                      V (1, y) = 1/2y for y ≥ 0                                                     (1)
+
+According to Bellman’s equation (1) and boundary conditions V (0, y) = 0 for all y ≥ 0, 
+
+V (1, y) = ½ V (1, y-1) for y > 0
+
+Hence
+V (1, y) = 1/2y V (1, 0) 
+
+Given the boundary condition V (1, 0) = 1, 
+
+V (1, y) = 1/2y for y ≥ 0
+
+P4 – ii 
+
+From P4 – i we know that V (x, 1) = 1 – V (1, x) and given that V (1, x) = 1/2x for x ≥ 0, 
+
+V(x, 1) = 1 – 1/2x for x ≥ 0
+
+P4 – iii 
+                                                
